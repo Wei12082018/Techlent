@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  
+  <h2>Predict Death Probability in Five Years</h2>
+  
+  <form method="POST" action="/">
+    customer quantity:<br>
+    <input type="number" name="cust_quantity" value=452>
+    <br><br>
+    customer other usage:<br>
+    <input type="number" name="cust_other_usage" value=128>
+    <br><br>
+    customer coupon usage:<br>
+    <input type="number" name="cust_coupon_usage" value=2>
+    <br><br>
+    campagin duration:<br>
+    <input type="number" name="camp_duration" value=47>
+    <br><br>
+    item Numbers:<br>
+    <input type="number" name="item_NO" value=16>
+    <br><br>
+    brand Numbers:<br>
+    <input type="number" name="brand_NO" value=1>
+    <br><br>
+    items quantity:<br>
+    <input type="number" name="items_quantity" value=533>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+  {% if pred == 1 %}
+  <p>This customer will use coupon to purchase.</p>
+  {% elif pred == 0 %}
+  <p>This customer will NOT use coupon to purchase.</p>
+  {% else %}
+  <p></p>
+  {% endif %}
+
+  </body>
+</html>
+
+
